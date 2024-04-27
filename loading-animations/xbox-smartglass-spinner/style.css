@@ -1,0 +1,48 @@
+.circle {
+	border: 3.5px solid transparent;
+	border-top-color: #9ee925;
+	border-radius: 50%;
+	animation: spinner linear infinite;
+}
+
+.circle.one {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	margin: auto;
+	animation-duration: 1s;
+}
+
+.circle.two {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	margin: auto;
+	animation-duration: 1.5s;
+}
+
+.circle.three {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	margin: auto;
+	animation-duration: 2s;
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+body {
+	background-color: rgb(25, 25, 25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
