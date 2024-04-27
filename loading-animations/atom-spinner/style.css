@@ -1,0 +1,53 @@
+.orbit {
+	width: 300px;
+	height: 300px;
+	border: 1.5px solid black;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.text {
+	font-size: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: fadeInOut 4s linear infinite;
+}
+
+@keyframes fadeInOut {
+	0%, 100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+.electron {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	animation: circular 4s linear infinite;
+}
+
+@keyframes circular {
+	0% {
+		transform: rotate(0) translate(150px) rotate(0);
+	}
+	100% {
+		transform: rotate(360deg) translate(150px) rotate(-360deg);
+	}
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
