@@ -1,0 +1,37 @@
+.circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0 5px;
+	animation: fadeInOut 2s ease-in-out infinite;
+}
+
+.circle.one {
+	background-color: #ffcc5c;
+}
+
+.circle.two {
+	background-color: #27c390;
+	animation-delay: 0.4s;
+}
+
+.circle.three {
+	background-color: #ff6f69;
+	animation-delay: 0.8s;
+}
+
+@keyframes fadeInOut {
+	50% {
+		opacity: 0;
+		transform: scale(0.7) translateY(10px);
+	}
+}
+
+body {
+	background-color: rgb(25, 25, 25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
